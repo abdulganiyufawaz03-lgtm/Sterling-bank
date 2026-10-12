@@ -1,0 +1,69 @@
+:root {
+  --sterling-red: #e30613;      
+  --sterling-dark: #2c2e33;      
+  --bg-color: #e5e5e5;          
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', -apple-system, sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  user-select: none;
+}
+
+.sterling-dot-mark {
+  width: 180px;
+  height: 180px;
+  background-color: var(--sterling-red);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.inner-cutout {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 22px;
+  right: 28px;
+}
+
+.sterling-wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-sterling {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--sterling-dark);
+  line-height: 0.85;
+  letter-spacing: -1.5px;
+}
+
+.brand-bank {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: var(--sterling-dark);
+  letter-spacing: 2px;
+  line-height: 0.9;
+  margin-top: 8px;
+}
